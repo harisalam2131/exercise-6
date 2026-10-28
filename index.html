@@ -54,28 +54,33 @@
         font-weight: 500;
       }
 
-      ul {
+      #nav {
+        font-size: 1em;
+        font-weight: 700;
+      }
+
+      #nav ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
-        border: 3px solid black;
       }
 
-      li {
-        float: left;
+      #nav li {
+        list-style: none;
+        display: inline;
       }
 
-      li a {
-        color: white;
-        display: block;
-        padding: 14px 20px;
+      #nav a {
         text-decoration: none;
+        margin-right: .5em;
+        padding: 5px 10px;
+        color: white;
       }
 
-      li a:hover {
-        background-color: lightgray;
-        color: black;
+      #nav a:hover {
+        color: grey;
       }
+
 
       .container {
         display: grid;
@@ -112,12 +117,14 @@
 
     <h1>Greg’s Banh Mi</h1>
 
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Menu</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
+    <div id="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
 
     <h2>At Greg’s Banh Mi, we’re serving up the perfect marriage of French and Vietnamese culinary traditions&mdash;crispy-on-the-outside, pillowy-on-the-inside baguettes loaded with bold, fresh flavours that'll make your taste buds sing.</h2>
 
